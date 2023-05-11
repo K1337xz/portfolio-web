@@ -1,5 +1,9 @@
+@use "./scss/abstract/colors" as *;
+@forward "./scss/base/reset";
+
 body {
 	width: 100%;
 	height: 100%;
-	background-color: #1b1a17;
+	background-color: $mainbgcolor;
+	font-family: "Inconsolata", monospace;
 }
