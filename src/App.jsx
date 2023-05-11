@@ -1,17 +1,11 @@
 import { useState } from "react";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
 	const [count, setCount] = useState(0);
 
-	return (
-		<>
-			<div>
-				<h1>Hi!</h1>
-			</div>
-		</>
-	);
+	return <></>;
 }
 
 export default App;
