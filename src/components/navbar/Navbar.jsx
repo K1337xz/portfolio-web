@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./_Navbar.scss";
 export default function Navbar() {
 	return (
@@ -26,6 +28,9 @@ export default function Navbar() {
 						</a>
 					</li>
 				</ul>
+				<div className="nav__mobile">
+					<FontAwesomeIcon icon={faBars} size="xl" color="#f0e3ca" />
+				</div>
 			</nav>
 		</header>
 	);
