@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Mainsection from "./components/mainsection/Mainsection";
+import Aboutmesection from "./components/aboutmesection/Aboutmesection";
 import "./App.scss";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 			<Navbar />
 			<main className="container">
 				<Mainsection />
+				<Aboutmesection />
 			</main>
 		</>
 	);

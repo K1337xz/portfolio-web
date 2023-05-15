@@ -1,6 +1,11 @@
 @use "./scss/abstract/colors" as *;
 @forward "./scss/base/reset";
 
+* {
+	&::selection {
+		background-color: $hoverText;
+	}
+}
 body {
 	width: 100%;
 	height: 100%;

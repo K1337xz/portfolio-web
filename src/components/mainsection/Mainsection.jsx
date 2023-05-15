@@ -1,5 +1,7 @@
 import React from "react";
 import heroImg from "../../assets/heroimg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./_Mainsection.scss";
 
 export default function Mainsection() {
@@ -13,6 +15,22 @@ export default function Mainsection() {
 						Welcome! My name is Jakub, I’m front-end developer
 						living in Poland.
 					</p>
+					<div className="leftWrapp__socials">
+						<a
+							href="https://github.com/K1337xz"
+							target="_blank"
+							className="leftWrapp__link"
+						>
+							<FontAwesomeIcon icon={faGithub} />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/jakub-buksa-673051257/"
+							target="_blank"
+							className="leftWrapp__link"
+						>
+							<FontAwesomeIcon icon={faLinkedin} />
+						</a>
+					</div>
 				</div>
 			</div>
 			<div className="rightWrapp">

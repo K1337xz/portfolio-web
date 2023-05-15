@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/logo.png";
 import "./_Navbar.scss";
+
 export default function Navbar() {
 	return (
 		<header>
 			<nav className="nav">
 				<div className="nav__logo">
-					<a href="#">
+					<a href="#" className="nav__link">
 						<img src={logo} className="nav__image" />
 					</a>
 				</div>
