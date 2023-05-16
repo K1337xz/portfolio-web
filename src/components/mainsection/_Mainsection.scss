@@ -77,10 +77,17 @@
 @include media("<=phone") {
 	.maincontent {
 		flex-direction: column;
+		height: 88%;
 	}
 	.leftWrapp {
 		max-width: 100%;
 		flex: 0;
+		&__socials {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
 		&__content {
 			width: 100%;
 			gap: 1rem;
@@ -115,8 +122,7 @@
 		}
 		&__image {
 			width: fit-content;
-
-			height: 45vh;
+			height: 40vh;
 		}
 	}
 }
@@ -124,6 +130,7 @@
 @include media(">=phone", "<=desktop") {
 	.maincontent {
 		flex-direction: column;
+		height: 95%;
 	}
 	.leftWrapp {
 		flex: 0;
@@ -131,9 +138,11 @@
 		max-width: 100%;
 		text-align: center;
 		&__content {
+			gap: 1rem;
 			align-items: center;
 			width: 100%;
-			gap: 0;
+			line-height: 25px;
+
 			h1 {
 				font-size: 40px;
 				text-align: center;
@@ -146,7 +155,7 @@
 			}
 			p {
 				font-size: 16px;
-				width: 100%;
+				width: 45%;
 				text-align: center;
 			}
 		}
@@ -165,6 +174,7 @@
 		}
 		&__image {
 			width: fit-content;
+			height: 45vh;
 		}
 	}
 }

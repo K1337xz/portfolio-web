@@ -1,0 +1,50 @@
+@use "../../scss/abstract/colors" as *;
+@use "../../scss/base/brakepoints" as *;
+
+.skils {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 50%;
+	background-color: $sectionColor;
+	&__border {
+		display: block;
+		width: 200px;
+		height: 2px;
+		border: 1px solid $hoverText;
+		border-top-left-radius: 50%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		opacity: 0.3;
+	}
+	&__content {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 15%));
+		gap: 2rem;
+		width: 100%;
+		height: 100%;
+	}
+	&__cardContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $mainbgcolor;
+		text-align: center;
+		width: 90%;
+		height: 90%;
+		svg {
+			color: $normalText;
+			font-size: 150px;
+		}
+	}
+	h3 {
+		color: $textRed;
+		font-size: 32px;
+		margin-bottom: -1rem;
+	}
+}
