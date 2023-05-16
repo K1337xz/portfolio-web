@@ -10,7 +10,6 @@ export default function Myskils() {
 	return (
 		<div className="skils">
 			<h3>My skills</h3>
-			<span className="aboutWrapper__border"></span>
 			<div className="skils__content">
 				<div className="skils__cardContent">
 					<div className="skils__card--html">
