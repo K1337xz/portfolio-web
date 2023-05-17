@@ -9,28 +9,30 @@ import {
 export default function Myskils() {
 	return (
 		<div className="skils">
-			<h3>My skills</h3>
+			<div className="skils__top">
+				<h3>My skills</h3>
+			</div>
 			<div className="skils__content">
 				<div className="skils__cardContent">
-					<div className="skils__card--html">
+					<div className="skils__card skils__card--html">
 						<FontAwesomeIcon icon={faHtml5} size="xl" />
 						<p>HTML5</p>
 					</div>
 				</div>
 				<div className="skils__cardContent">
-					<div className="skils__card--css">
+					<div className="skils__card skils__card--css">
 						<FontAwesomeIcon icon={faCss3Alt} size="xl" />
 						<p>CSS3</p>
 					</div>
 				</div>
 				<div className="skils__cardContent">
-					<div className="skils__card--js">
+					<div className="skils__card skils__card--js">
 						<FontAwesomeIcon icon={faJs} size="xl" />
 						<p>JavaScript</p>
 					</div>
 				</div>
 				<div className="skils__cardContent">
-					<div className="skils__card--html">
+					<div className="skils__card skils__card--scss">
 						<FontAwesomeIcon icon={faSass} size="xl" />
 						<p>SASS</p>
 					</div>

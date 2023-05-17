@@ -47,3 +47,14 @@
 		}
 	}
 }
+@include media(">=phone", "<=desktop") {
+	.aboutWrapper {
+		height: 40%;
+		&__content {
+			width: 100%;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
