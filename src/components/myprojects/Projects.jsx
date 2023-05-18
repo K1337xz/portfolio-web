@@ -1,4 +1,5 @@
 import "./_Projects.scss";
+import '';
 
 export default function Projects() {
 	return (
@@ -12,7 +13,9 @@ export default function Projects() {
 			</div>
 			<div className="portfolio__wrapper">
 				<div className="porfolio__card">
-					<div className="porfolio__img"></div>
+					<div className="porfolio__img">
+						<img src={}/>
+					</div>
 				</div>
 			</div>
 		</div>

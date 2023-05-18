@@ -4,6 +4,7 @@ import Mainsection from "./components/mainsection/Mainsection";
 import Aboutmesection from "./components/aboutmesection/Aboutmesection";
 import Myskils from "./components/myskils/Techstack";
 import Current from "./components/currentlearning/Current";
+import Projects from "./components/myprojects/Projects";
 import "./App.scss";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 				<Aboutmesection />
 				<Myskils />
 				<Current />
+				<Projects />
 			</main>
 		</>
 	);
