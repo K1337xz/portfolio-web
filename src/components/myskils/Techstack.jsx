@@ -1,4 +1,4 @@
-import "./_Myskils.scss";
+import "./_Techstack.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faHtml5,
@@ -10,7 +10,7 @@ export default function Myskils() {
 	return (
 		<div className="skils">
 			<div className="skils__top">
-				<h3>My skills</h3>
+				<h3>Tech Stack</h3>
 			</div>
 			<div className="skils__content">
 				<div className="skils__cardContent">

@@ -7,8 +7,8 @@ export default function Aboutmesection() {
 				<h3>About Me</h3>
 				<span className="aboutWrapper__border"></span>
 				<p className="aboutWrapper__text">
-					I’m 23 y.o frontend who started my journey in in technical
-					school. I'm passionate about creating visually appealing and
+					I’m 23 y.o frontend who started journey in technical school.
+					I'm passionate about creating visually appealing and
 					user-friendly websites. I'm always eager to learn new
 					technologies and approaches to enhance his skills and
 					knowledge in the industry.

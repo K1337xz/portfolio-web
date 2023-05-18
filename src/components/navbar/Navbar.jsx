@@ -21,7 +21,7 @@ export default function Navbar() {
 					</li>
 					<li className="nav__item">
 						<a href="#" className="nav__link">
-							Skills
+							Tech Stack
 						</a>
 					</li>
 					<li className="nav__item">

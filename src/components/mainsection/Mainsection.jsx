@@ -12,8 +12,9 @@ export default function Mainsection() {
 					<h1>Jakub Buksa</h1>
 					<h2>Frontend Developer</h2>
 					<p>
-						Welcome! My name is Jakub, I’m front-end developer
-						living in Poland.
+						Hi! I’m Kuba, a frontend developer based in Poland
+						currently looking for a full-time job. Most of the
+						projects in my portfolio are personal.
 					</p>
 					<div className="leftWrapp__socials">
 						<a
