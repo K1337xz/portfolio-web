@@ -53,8 +53,8 @@ export default function Projects() {
 						<img src={urlShortening} alt="urlshortening website" />
 					</div>
 					<div className="portfolio__text">
-						<h4>Space Tourism</h4>
-						<p>Space Tourism multi page website</p>
+						<h4>URL shortening API landing page</h4>
+						<p>URL shortening API landing page</p>
 						<div className="stack">
 							<p>SCSS</p>
 							<p>JS/HTML5/API</p>
