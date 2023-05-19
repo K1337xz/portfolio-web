@@ -6,6 +6,7 @@ import {
 	faJs,
 	faSass,
 } from "@fortawesome/free-brands-svg-icons";
+
 export default function Myskils() {
 	return (
 		<div className="skils">
