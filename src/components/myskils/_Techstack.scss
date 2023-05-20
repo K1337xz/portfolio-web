@@ -130,10 +130,13 @@
 
 @include media(">=phone", "<=desktop") {
 	.skils {
-		height: 70%;
+		height: 35%;
+		&__content {
+			height: 65%;
+		}
 		&__cardContent {
 			width: 90%;
-			height: 45%;
+			height: 80%;
 			svg {
 				font-size: 60px;
 			}

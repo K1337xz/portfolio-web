@@ -132,7 +132,7 @@
 
 @include media(">=phone", "<=desktop") {
 	.learning {
-		height: 70%;
+		height: 35%;
 		&__cardContent {
 			width: 90%;
 			height: 60%;

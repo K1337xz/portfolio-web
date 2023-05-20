@@ -23,19 +23,16 @@ export default function Projectcard() {
 							src={space2}
 							alt="space image secondpage"
 							className="portfolio__img--space"
-							style={{ display: "none" }}
 						/>
 						<img
 							src={space3}
 							alt="space image thirdpage"
 							className="portfolio__img--space"
-							style={{ display: "none" }}
 						/>
 						<img
-							src={space3}
+							src={space4}
 							alt="space image fourth"
 							className="portfolio__img--space"
-							style={{ display: "none" }}
 						/>
 					</div>
 				</div>
@@ -59,7 +56,7 @@ export default function Projectcard() {
 							target="_blank"
 							className="socials__link"
 						>
-							Server
+							Live{" "}
 							<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 						</a>
 					</div>
@@ -89,14 +86,14 @@ export default function Projectcard() {
 							target="_blank"
 							className="socials__link"
 						>
-							Server
+							Live{" "}
 							<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 						</a>
 					</div>
 				</div>
 			</div>
 			<div className="portfolio__card">
-				<div className="portfolio__img">
+				<div className="portfolio__imgLast">
 					<img
 						src={bookmark}
 						alt="space image"
@@ -123,7 +120,7 @@ export default function Projectcard() {
 							target="_blank"
 							className="socials__link"
 						>
-							Server
+							Live{" "}
 							<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 						</a>
 					</div>
