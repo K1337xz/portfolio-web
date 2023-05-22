@@ -5,6 +5,7 @@ import Aboutmesection from "./components/aboutmesection/Aboutmesection";
 import Myskils from "./components/myskils/Techstack";
 import Current from "./components/currentlearning/Current";
 import Projects from "./components/myprojects/Projects";
+import Contactform from "./components/contactform/Contactform";
 import "./App.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 				<Myskils />
 				<Current />
 				<Projects />
+				<Contactform />
 			</main>
 		</>
 	);
