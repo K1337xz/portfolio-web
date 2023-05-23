@@ -12,7 +12,6 @@ export default function FormRow(props) {
 					hidden={props.hidden}
 				/>
 			</label>
-			<span className="error"></span>
 		</>
 	);
 }
