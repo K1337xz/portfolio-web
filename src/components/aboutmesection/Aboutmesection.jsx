@@ -2,7 +2,7 @@ import React from "react";
 import "./_Aboutmesection.scss";
 export default function Aboutmesection() {
 	return (
-		<div className="aboutWrapper">
+		<div className="aboutWrapper" id="abt">
 			<div className="aboutWrapper__content">
 				<h3>About Me</h3>
 				<span className="aboutWrapper__border"></span>

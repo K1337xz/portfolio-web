@@ -2,6 +2,7 @@
 @forward "./scss/base/reset";
 
 * {
+	scroll-behavior: smooth;
 	&::selection {
 		background-color: $hoverText;
 	}

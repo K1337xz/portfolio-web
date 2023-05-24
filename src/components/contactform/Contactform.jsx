@@ -3,7 +3,7 @@ import FormRow from "../Formrow";
 
 export default function Contactform() {
 	return (
-		<div className="contact">
+		<div className="contact" id="con">
 			<div className="contact__top">
 				<h3>Contact with me</h3>
 			</div>

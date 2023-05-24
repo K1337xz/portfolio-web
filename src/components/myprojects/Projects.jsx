@@ -3,7 +3,7 @@ import Projectcard from "../Projectcard";
 
 export default function Projects() {
 	return (
-		<div className="portfolio">
+		<div className="portfolio" id="proj">
 			<div className="portfolio__top">
 				<h3>Portfolio</h3>
 				<p>

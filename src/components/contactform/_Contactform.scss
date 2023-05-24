@@ -7,7 +7,7 @@
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-	height: 85%;
+	height: 77vh;
 	color: $normalText;
 	text-align: center;
 	background-color: $sectionColor;
@@ -18,7 +18,7 @@
 		flex-direction: column;
 		text-align: center;
 		width: 100%;
-		height: 15%;
+		height: 25%;
 		gap: 2rem;
 		h3 {
 			color: $textRed;
@@ -94,6 +94,52 @@
 				transition: width, border-color, 0.5s ease-in-out;
 				border-color: $hoverText;
 			}
+		}
+	}
+}
+@include media("<=phone") {
+	.contact {
+		height: 100vh;
+		&__content {
+			height: 75vh;
+		}
+		&__top {
+			height: 10%;
+			margin-bottom: 0.1rem;
+		}
+		&__form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+			height: auto;
+			gap: 2rem;
+			input {
+				width: 55%;
+				height: 5vh;
+				text-align: center;
+				&:focus {
+					width: 60%;
+				}
+			}
+			textarea {
+				width: 55%;
+				height: 10vh;
+				&:focus {
+					height: 17vh;
+				}
+			}
+			button {
+				width: 30%;
+			}
+		}
+	}
+}
+@include media(">=phone", "<=desktop") {
+	.contact {
+		&__form {
+			width: 100%;
 		}
 	}
 }

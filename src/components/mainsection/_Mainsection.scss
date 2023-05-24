@@ -77,7 +77,7 @@
 @include media("<=phone") {
 	.maincontent {
 		flex-direction: column;
-		height: 88%;
+		height: 85vh;
 	}
 	.leftWrapp {
 		max-width: 100%;

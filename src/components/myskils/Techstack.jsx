@@ -9,7 +9,7 @@ import {
 
 export default function Myskils() {
 	return (
-		<div className="skils">
+		<div className="skils" id="tech">
 			<div className="skils__top">
 				<h3>Tech Stack</h3>
 			</div>

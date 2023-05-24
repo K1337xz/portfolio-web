@@ -1,0 +1,39 @@
+@use "../../scss/abstract/colors" as *;
+@use "../../scss/base/brakepoints" as *;
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 20vh;
+	&__link {
+		text-decoration: none;
+		color: $normalText;
+		margin-right: 1rem;
+		font-size: 30px;
+		&:hover {
+			color: $hoverText;
+		}
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 65%;
+	}
+	&__copy {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		color: $gray;
+	}
+	&__link--copy {
+		text-decoration: none;
+		color: $gray;
+		font-size: 10px;
+	}
+}

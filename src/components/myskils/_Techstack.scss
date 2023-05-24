@@ -7,7 +7,7 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	width: 100%;
-	height: 50%;
+	height: 50vh;
 	background-color: $sectionColor;
 	&__border {
 		display: block;
@@ -87,7 +87,7 @@
 
 @include media("<=phone") {
 	.skils {
-		height: 45%;
+		height: 45vh;
 		&__top {
 			height: 20%;
 			margin-bottom: 1rem;
@@ -130,7 +130,7 @@
 
 @include media(">=phone", "<=desktop") {
 	.skils {
-		height: 65%;
+		height: 65vh;
 		&__content {
 			height: 65%;
 		}
