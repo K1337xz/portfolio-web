@@ -5,12 +5,14 @@ export default function FormRow(props) {
 				<input
 					type={props.type}
 					value={props.value}
-					name={props.name}
-					onChange={props.handleChange}
+					id={props.name}
+					onChange={props.handlechange}
 					className={props.class}
 					placeholder={props.placeholder}
 					hidden={props.hidden}
+					required={props.req}
 				/>
+				<span className="error">{props.labelVal}</span>
 			</label>
 		</>
 	);
