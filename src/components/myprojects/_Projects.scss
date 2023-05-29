@@ -266,7 +266,7 @@
 				transform: translateY(22%);
 				&:hover {
 					transform: translateY(-33%);
-					transition: transform 10s ease-in-out 0s;
+					transition: transform 3s ease-in-out 0s;
 				}
 			}
 		}
@@ -289,7 +289,7 @@
 				transform: translateY(34%);
 				&:hover {
 					transform: translateY(-35%);
-					transition: transform 5s ease-in-out 0s;
+					transition: transform 3s ease-in-out 0s;
 				}
 			}
 		}
@@ -309,7 +309,7 @@
 				transform: translateX(160%);
 				&:hover {
 					transform: translateX(-153%);
-					transition: transform 5s ease-in-out 0s;
+					transition: transform 3s ease-in-out 0s;
 				}
 			}
 			&--space {
