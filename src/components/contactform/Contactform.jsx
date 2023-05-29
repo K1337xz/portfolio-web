@@ -16,6 +16,7 @@ export default function Contactform() {
 
 	const validateForm = (values) => {
 		const errors = {};
+		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 		if (!values.name) {
 			errors.name = "Name is required";
 		}
@@ -24,6 +25,8 @@ export default function Contactform() {
 		}
 		if (!values.email) {
 			errors.email = "Email is required";
+		} else if (!values.email.match(regex)) {
+			errors.email = "This is not a valid email format!";
 		}
 		if (!values.message) {
 			errors.message = "Message is required";
@@ -38,7 +41,7 @@ export default function Contactform() {
 		setFormValues({ ...formValues, [e.target.id]: e.target.value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setValuesError(validateForm(formValues));
 		setIsSubmit(true);
@@ -47,7 +50,19 @@ export default function Contactform() {
 	useEffect(() => {
 		console.log(valuesError);
 		if (Object.keys(valuesError).length === 0 && isSubmit) {
-			console.log(formValues);
+			axios.post(
+				`https://portfolio-contact-form-api-mocha.vercel.app/api/mail`,
+				{ ...formValues }
+			);
+			setFormValues((prevVal) => {
+				return {
+					name: "",
+					lastname: "",
+					email: "",
+					phone: "",
+					message: "",
+				};
+			});
 		}
 	}, [valuesError]);
 	return (
@@ -62,39 +77,66 @@ export default function Contactform() {
 							type="text"
 							placeholder="Name"
 							name="name"
-							values={formValues.name}
+							value={formValues.name}
 							handlechange={handleChange}
 							labelVal={valuesError.name}
+							class={
+								valuesError.name
+									? "contact__input--error"
+									: "contact__input"
+							}
 						/>
 						<FormRow
 							type="text"
 							name="lastname"
 							placeholder="Last Name"
-							values={formValues.lastname}
+							value={formValues.lastname}
 							handlechange={handleChange}
 							labelVal={valuesError.lastname}
+							class={
+								valuesError.lastname
+									? "contact__input--error"
+									: "contact__input"
+							}
 						/>
 						<FormRow
 							type="email"
 							name="email"
 							placeholder="Email"
-							values={formValues.email}
+							value={formValues.email}
 							handlechange={handleChange}
 							labelVal={valuesError.email}
+							class={
+								valuesError.email
+									? "contact__input--error"
+									: "contact__input"
+							}
 						/>
 						<FormRow
 							type="text"
 							name="phone"
 							placeholder="Phone Number"
-							values={formValues.phone}
+							value={formValues.phone}
 							handlechange={handleChange}
+							class="contact__input"
 						/>
-						<textarea
-							placeholder="Message"
-							onChange={handleChange}
-							id="message"
-							name="message"
-						></textarea>
+						<label for="message" className="messageLabel">
+							<textarea
+								placeholder="Message"
+								value={formValues.message}
+								onChange={handleChange}
+								id="message"
+								name="message"
+								class={
+									valuesError.message
+										? "contact__inputMessage--error"
+										: "contact__inputMessage"
+								}
+							></textarea>
+							<span className="messageLabel__error">
+								{valuesError.message}
+							</span>
+						</label>
 						<button>Submit Now</button>
 					</form>
 				</div>
